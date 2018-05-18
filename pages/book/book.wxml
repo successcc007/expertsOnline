@@ -1,16 +1,18 @@
 <!--pages/book/book.wxml-->
+<form bindsubmit="formSubmit">
 <view class="container">
   <scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore">
     <view class='message'>
       <text>留言内容</text>
       <textarea bindblur="bindTextAreaBlur" maxlength="-1" placeholder="请输入你的留言内容" placeholder-style="font-size:15px" />
     </view>
-    <view class='name'>
+    <!-- <view class='name'>
       <text>你的姓名</text>
       <input placeholder="请输入你的姓名" placeholder-style="font-size:15px" auto-focus/>
-    </view>
+    </view> -->
     <view class='btn'>
-      <button booktap="submit">提交</button>
+      <button formType="submit">提交</button>
     </view>
   </scroll-view>
 </view>
+ </form>

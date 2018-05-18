@@ -29,20 +29,33 @@ Page({
       })
     };
     that.setData({
-      ifExpert: wx.getStorageSync("type")=="0"?false:true
+      ifExpert: wx.getStorageSync("type") == "0" ? false : true
     });
     console.log("here")
-    let data = {};
-    util.request("Expert", "GET", data, function (res) {
-      if (that.data.ifExpert == "0") {
+    if (that.data.ifExpert) {//登录是专家
+      let data = {
+        ep: wx.getStorageSync("uname")
+      };
+      util.request("Message", "GET", data, function (res) {
+        console.log(res)
+        if (that.data.ifExpert) {
+          that.setData({
+            list: JSON.parse(res.data),
+          });
+          console.log("hereuser")
+          console.log(that.data.list)
+        }
+      });
+
+    } else {//登录是用户
+      let data = {};
+      util.request("Expert", "GET", data, function (res) {
         that.setData({
           list: JSON.parse(res.data),
         });
-        console.log("here2")
-        console.log(that.data.list)
-        console.log(that.data.list[0])
-      }
-    });
+      });
+    }
+
 
     //获取系统信息 
     wx.getSystemInfo({
@@ -91,6 +104,7 @@ Page({
   },
   //  跳转留言页面
   bookTap: function (e) {
+    console.log(e)
     wx.navigateTo({
       url: '../book/book?aid=' + e.currentTarget.dataset.aid
     })
