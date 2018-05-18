@@ -1,0 +1,12 @@
+<view class="container">
+  <scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore">
+    <view class='settingEmail'>
+      <view class='email'>
+        <input placeholder="请输入你的邮箱" placeholder-style="font-size:15px" auto-focus/>
+      </view>
+      <view class='btn'>
+        <button booktap="submit">确定</button>
+      </view>
+    </view>
+  </scroll-view>
+</view>

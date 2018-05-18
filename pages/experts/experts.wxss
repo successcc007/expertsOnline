@@ -1,0 +1,157 @@
+/**experts.wxss**/
+
+/**顶部tab切换**/
+
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  line-height: 80rpx;
+  background-color: #a3c3f6;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 49.8%;
+  color: #fff;
+}
+
+.on {
+  color: #176cf7;
+  border-bottom: 5rpx solid #176cf7;
+}
+
+ .swiper-box {
+  display: block;
+  height: 100%; 
+  width: 100%;
+  /* overflow: hidden; */
+} 
+
+.swiper-box view {
+  text-align: center;
+}
+
+/**下拉选择、搜索框**/
+
+.ex_picker {
+  display: flex;
+  width: 100%;
+  font-size: 30rpx;
+  color: #000;
+  background: #efeff4;
+  margin: 0;
+  padding: 10rpx 0rpx;
+}
+
+.ex_picker .ex_picker_wrap {
+  width: 25%;
+  /*background: #fff url(../../images/arrow.png) no-repeat right;*/
+  background-size: 25rpx 14rpx;
+  background-position: 650rpx;
+  /* border-radius: 20rpx; */
+  padding: 10rpx 30rpx;
+  border: 1px solid #ddd;
+  margin-left: 3%;
+}
+
+.ex_search {
+  width: 34%;
+  border: 1px solid #ddd;
+  margin-left: 10%;
+}
+
+.ex_search .ex_input {
+  flex: 1;
+}
+
+.searchBtn {
+  width: 15%;
+  height: 62rpx;
+  font-size: 26rpx;
+  line-height: 62rpx;
+  margin-right: 3%;
+  background-color: #f59232;
+  color: #fff;
+}
+
+/*专家列表  */
+
+.expert_list {
+  width: 100%;
+  margin-top: 20rpx;
+}
+
+.nav_section_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* padding:30rpx; */
+  padding-top: 25rpx;
+  padding-left: 3%;
+  border-bottom: 2rpx solid #ddd;
+  position: relative;
+  background-color: #fff;
+}
+
+.nav_section_items:active {
+  background: #ddd;
+}
+
+.nav_section_items .section_image {
+  width: 130rpx;
+  height: 130rpx;
+}
+
+.nav_section_items .section_image image {
+  width: 100%;
+  height: 100%;
+}
+
+.nav_section_items .section_cont {
+  width:410rpx;
+  font-size:26rpx;
+  color:#a9a9a9;
+  margin-right:5%;
+
+}
+
+.nav_section_items .section_cont view {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+/* .nav_section_items .section_cont .section_cont_intro {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+} */
+
+.nav_section_items .section_cont .section_cont_sub {
+  font-size: 28rpx;
+  /* line-height:60rpx; *//* color:#000; */
+  margin-bottom: 10rpx;
+  color: #666;
+}
+
+.nav_section_items .section_cont .section_cont_name {
+  font-size: 30rpx;
+  color: #d24a58;
+  line-height: 35rpx;
+}
+.nav_section_items .section_chart {
+  width:80rpx;
+  height:80rpx;
+  font-size:26rpx;
+  border-radius:100%;
+  background:#d24a58;
+  line-height:80rpx;
+  color:#fff;
+  text-align:center;
+  margin-top:21rpx;
+  margin-right:3%;
+
+}

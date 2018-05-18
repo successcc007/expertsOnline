@@ -1,0 +1,38 @@
+<view class="container">
+<view class="ar_coverpath">
+    <image src="../../images/skilledt_banner.png" mode="aspectFill"></image>
+</view>
+<view class="ar_cont">
+    <view class="ar_cont_h1">张一山</view>
+    <text>指导项目设计单位进行各阶段设计工作，依据国家现行的设计规范、地方的规划要求，对勘察设计单位提出地基和总平面、建筑结构、建筑设备、防火设计、建筑景观与室内设计、智能化系统工程、政设施工程等方面的初步设计及施工图设计的设计导则。
+    </text>
+    <view class="ar_cont_h2">
+    【服务内容】
+    </view>
+
+    <view class="ar_sevice_item" style="border-top:1px solid #ddd;">
+        <text class="ar_cont_subject">组织设计成果创优申报</text>
+        <!-- <text class="ar_cont_price">¥600</text>
+        <view class="section_book" bindtap="bookTap" data-aid="{{item.id}}">
+            <text>预约</text>
+        </view> -->
+    </view>
+
+    <view class="ar_sevice_item">
+        <text class="ar_cont_subject">组织各类研讨评审会以及对招标文件进行技术、经济审查、参与合同谈判</text>
+        <!-- <text class="ar_cont_price">¥800</text>
+         <view class="section_book" bindtap="bookTap" data-aid="{{item.id}}">
+            <text>预约</text>
+        </view>  -->
+    </view>
+
+    <view class="ar_sevice_item">
+        <text class="ar_cont_subject">协助招标人组织科研成果转化</text>
+        <!-- <text class="ar_cont_price">¥900</text>
+        <view class="section_book" bindtap="bookTap" data-aid="{{item.id}}">
+            <text>预约</text>
+        </view> -->
+    </view>
+</view>
+
+</view>

@@ -1,0 +1,16 @@
+<view class="container">
+  <scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore">
+    <view class='inputs'>
+      <view class='Name'>
+        <view class='ex_lable'>账号</view>
+        <input class='ex_input' placeholder="请输入账号" auto-focus/>
+      </view>
+      <view class='Password'>
+        <view class='ex_lable'>密码</view>
+        <input class='ex_input' type='password' placeholder="请输入密码" auto-focus/>
+      </view>
+    </view>
+    <button>注册</button>
+
+  </scroll-view>
+</view>

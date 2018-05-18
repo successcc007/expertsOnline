@@ -1,0 +1,47 @@
+<view class='news'>
+  <view class='new_top_txt'>您正在与{{tabdata.nick}}进行沟通</view>
+  <view class="historycon">
+    <scroll-view scroll-y="true" scroll-top="{{scrollTop}}" class="history" wx:for="{{centendata}}"  wx:key=''>
+      <view>
+        <!-- <text class='time'>{{item.time}}</text>  -->
+        <!-- <text class='time'>2017-12-01 18:48:50</text> -->
+      </view>
+      <block wx:if="{{item.position =='right'}}">
+        <view class='my_right'>
+          <view class='page_row'>
+              <view class='chartBox'>
+              <text class='new_txt'>{{item.content}}</text>
+              <view class='sanjiao my'></view>
+            </view> 
+            <image src='../../images/skilledt_img_01.png' class='new_imgtent'></image> 
+
+            <image class='new_img' wx:if='{{item.show_rignt == "是自己的内容，显示在右边，右边渲染 nickname_owner，head_owner"}}' src='{{item.head_owner}}'></image>
+            <image class='new_img' wx:if='{{item.show_rignt == "是自己的内容，显示在右边，右边渲染 nickname_open，head_open"}}' src='{{item.head_open}}'></image>
+          </view>
+        </view>
+      </block>
+      <block wx:if="{{item.position =='left'}}">
+        <view class='you_left'>
+          <view class='page_row'>
+            <!-- <image class='new_img' wx:if='{{item.show_rignt == "不是自己的内容，显示在左边，左边渲染 nickname_owner，head_owner"}}' src='{{item.head_owner}}'></image>
+            <image class='new_img' wx:if='{{item.show_rignt == "不是自己的内容，显示在左边，左边渲染 nickname_open，head_open"}}' src='{{item.head_open}}'></image> -->
+
+            <image src='../../images/skilledt_img_02.png' class='new_imgtent'></image>
+            <view class='chartBox youbox'>
+              <view class='sanjiao you'></view>
+              <text class='new_txt'>{{item.content}}</text>
+            </view>
+
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>
+<view class='hei' id="hei"></view>
+<view class="sendmessage">
+  <input type="emoji" bindinput="bindChange" confirm-type="done" value='{{newsInputVal}}' placeholder="" />
+  <button catchtap="add">发送</button>
+  <input style='display:none' type="" bindinput="bindChange" confirm-type="done" placeholder="" />
+  <image bindtap="upimg1" class='jia_img' src='../../../images/edit.png'></image>
+</view>

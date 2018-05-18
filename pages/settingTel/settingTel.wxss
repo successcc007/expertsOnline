@@ -1,0 +1,35 @@
+.settingTel {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 165rpx;
+}
+
+.tel {
+  width: 65%;
+  margin: 10rpx auto;
+}
+
+.tel input {
+  border: 2rpx solid #dfdfdf;
+  background-color: #fff;
+  padding-left: 20rpx;
+  padding: 6rpx 0 6rpx 20rpx;
+  border-radius: 5rpx;
+  margin-top: 20rpx;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 30rpx;
+  margin-right: 5%;
+}
+
+.btn button {
+  width: 130rpx;
+  background-color: #60b8f6;
+  color: #fff;
+  font-size: 30rpx;
+  height: 65rpx;
+  line-height: 65rpx;
+}

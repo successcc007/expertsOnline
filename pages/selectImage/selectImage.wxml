@@ -1,0 +1,21 @@
+<view class="container">
+  <scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore">
+    <view class='selectImage'>
+      <image src="{{tempFilePaths}}" mode="aspectFill"></image>
+      <view class='tip'>点击头像更换</view>
+    </view>
+    <view class='photo-wrap'>
+      <view class='photo-image-wrap photo-image-wrap1'>
+        <image src='../../images/photo.png' bindtap='getImage'></image>
+        <text>相册</text>
+      </view>
+      <view class='photo-image-wrap photo-image-wrap2'>
+        <image src='../../images/camera.png' bindtap='takePhoto'></image>
+        <text>拍摄</text>
+      </view>
+      <!-- <navigator url='/pages/index/index'>
+        <image src='/images/close1.png' class='close'></image>
+      </navigator> -->
+    </view>
+  </scroll-view>
+</view>

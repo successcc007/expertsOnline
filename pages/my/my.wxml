@@ -1,0 +1,23 @@
+<view class="container">
+  <scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore">
+    <view class='info_1' bindtap="infoTap">
+      <!--image-->
+      <view class="section_image">
+        <image src="../../images/skilledt_img_01.png" mode="aspectFill"></image>
+      </view>
+      <!--cont-->
+      <view class='section_cont'>
+        <view class='section_cont_name'>
+          <text>张一山</text>
+        </view>
+        <view class='section_cont_sub'>
+          <text>工程设计专家</text>
+        </view>
+      </view>
+      <!--icon-->
+      <view class="section_icon">
+        <text>></text>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,40 @@
+<view class="container">
+  <scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore">
+    <view style='background-color:#fff'>
+      <view class='user_info user_image' bindtap="selectImageTap">
+        <text class='lable'>头像：</text>
+        <image src="../../images/skilledt_img_01.png" mode="aspectFill"></image>
+        <text class='icon'>></text>
+      </view>
+      <view class='user_info' bindtap="settingNameTap">
+        <text class='lable'>姓名：</text>
+        <text class='textbtn'>张一山</text>
+        <text class='icon'>></text>
+      </view>
+      <view class='user_info' bindtap="settingTelTap">
+        <text class='lable'>手机：</text>
+        <text class='textbtn'>15212248368</text>
+        <text class='icon'>></text>
+      </view>
+      <view class='user_info' bindtap="settingEmailTap">
+        <text class='lable'>邮箱：</text>
+        <text class='textbtn'>1663009158@qq.com</text>
+        <text class='icon'>></text>
+      </view>
+      <view class='user_info' bindtap="settingAddressTap">
+        <text class='lable'>地址：</text>
+        <text class='textbtn'>安徽省芜湖市鸠江区</text>
+        <text class='icon'>></text>
+      </view>
+      <view class='user_info'>
+        <text class='lable'>所在公司：</text>
+        <text class='textbtn'>安徽贝慕</text>
+        <text class='icon'>></text>
+      </view>
+      
+    </view>
+  </scroll-view>
+  <view>
+  <button bindtap='out'>退出</button>
+  </view>
+</view>
