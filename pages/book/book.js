@@ -24,11 +24,14 @@ Page({
     let data = {
       uid: wx.getStorageSync("uid"),
       epid: this.data.epid,
-      text: this.data.text
+      text: this.data.text,
+      type:"outline"
     };
     console.log(data);
     util.request("Message", "GET", data, function (res) {
-
+      wx.navigateBack({
+        delta: 1
+      })
     });
   },
   /**
@@ -53,6 +56,7 @@ Page({
    */
   onShow: function () {
 
+  
   },
 
   /**

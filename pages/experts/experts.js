@@ -22,6 +22,12 @@ Page({
   },
 
   onLoad: function () {
+  },
+
+  /**
+  * 生命周期函数--监听页面显示
+  */
+  onShow: function () {
     var that = this;
     if (!wx.getStorageSync("uid") > 0) {
       wx.redirectTo({
@@ -34,17 +40,13 @@ Page({
     console.log("here")
     if (that.data.ifExpert) {//登录是专家
       let data = {
-        ep: wx.getStorageSync("uname")
+        userId: wx.getStorageSync("uid")
       };
       util.request("Message", "GET", data, function (res) {
         console.log(res)
-        if (that.data.ifExpert) {
-          that.setData({
-            list: JSON.parse(res.data),
-          });
-          console.log("hereuser")
-          console.log(that.data.list)
-        }
+        that.setData({
+          list: JSON.parse(res.data),
+        });
       });
 
     } else {//登录是用户

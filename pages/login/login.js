@@ -62,10 +62,13 @@ Page({
         util.setStorageSync("Mobile", jsonData.Mobile);
         util.setStorageSync("Telphone", jsonData.Telphone);
         util.setStorageSync("type", jsonData.type);
-        console.log(jsonData.type);        
-        wx.navigateBack({
-          delta: 1
-        });
+        console.log(jsonData.type);   
+        wx.redirectTo({
+          url: '../my_info/my_info',
+        })     
+        // wx.navigateBack({
+        //   delta: 1
+        // });
       }
     })
   },
